@@ -1,0 +1,2062 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+
+  
+}
+
+
+/* .right.carousel-control, .left.carousel-control {
+  display: none;
+} */
+
+
+
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  padding: 0 4.8rem;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #027990;
+  /* position: fixed;
+  overflow: hidden; */
+}
+
+.header .logo {
+  height: 3rem;
+}
+
+.logopart{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    transition: transform .7s ease-in-out;
+    transition: 0.5s all;
+}
+.logopart img:hover{
+  transform: rotatey(360deg);
+}
+
+.logonotes , .logokart{
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: 'Poppins', 'Times New Roman', Times, serif;
+    
+}
+
+.logonotes{
+    color: #E59245;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 4.8rem;
+  list-style: none;
+  transition: all 1s;
+  
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #212529;
+  transition: all 0.3s;
+}
+
+.navbar-link:hover,
+.navbar-link:active {
+  color: #ffffff;
+  transition: all 1s;
+}
+
+.mobile-navbar-btn {
+  display: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.mobile-nav-icon {
+  width: 4rem;
+  height: 4rem;
+  color: #212529;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+  display: none;
+}
+
+/* ===========================================
+Hero  Section Start
+======================================= */
+.section-hero{padding: 9.6rem 0;
+  background-color: #027990;
+  height: 54rem;
+  /* border: 2px solid red; */
+
+  display: flex;
+  /* display: grid;
+  grid-template-columns: repeat(2 , 1fr); */
+  justify-content: center;
+  align-items: center; 
+  flex-direction: row;
+
+  justify-content: space-between;
+}
+
+.hero-main{
+ 
+  /* border: 2px solid rgb(0, 34, 255); */
+  /* height:500px; */
+  width: 500px;
+
+  
+}
+
+.carousel-item img{
+  height: 54rem ;
+  
+  
+
+
+}
+
+
+.carousel-item{
+  display: inline-block;
+}
+
+
+
+
+ .headingtext{
+  
+  /* font-family: 'Reem Kufi Fun', sans-serif; */
+  font-size: 1.8rem;
+  
+
+
+}
+.hero-main-left h1{
+  font-family: 'Reem Kufi Fun', sans-serif;
+  font-size: 4.8rem;
+  
+}
+
+
+
+.hero-main-left h1 .exp{
+  color: #DC9E1C;
+}
+
+
+.headclubbed{
+  padding: 10vh;
+  position: absolute;
+  top: 4rem;
+  
+}
+
+.quote-top h1{
+  display: inline-block;
+}
+
+.quote-botom h2{
+  display: inline-block;
+}
+.hero-main-left{
+  
+  font-family: 'Reem Kufi Fun', sans-serif;
+  /* align-self: flex-start; */
+  height: 54rem;
+  width: 77rem;
+  align-items: center;
+  display: flex;
+  position: relative;
+
+}
+.hero-main-right{
+  /* border: 2px solid red; */
+  /* align-self: flex-end; */
+  height: 54rem;
+  width: 69rem;
+  margin-bottom: 8.5rem;
+  margin-right: 5rem;
+
+  
+}
+
+.quote-top{
+  display: inline-block;
+
+}
+
+.quote-bottom{
+
+  display: inline-block;
+
+}
+
+h1 .type{
+  overflow: hidden;
+  /* border-right: .15em solid orange; */
+  white-space: nowrap;
+  animation: typing 0.8s steps(20, end) forwards,blink .8s linear;
+  /* font-size: 1.6rem; */
+  width: 0;
+}
+
+h1 .type2{
+   overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  animation: typing 0.8s steps(20, end) forwards, blinking .8s infinite;
+  animation-delay: 0.8s;
+  /* font-size: 1.6rem; */
+  width: 0;
+}
+
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blinking {
+  from { border-color: transparent }
+  to { border-color: orange; }
+}
+
+@keyframes blink {
+  0% { border-color: transparent ;}
+  80% { border-color: orange; }
+  1000% { border-color: transparent }
+
+}
+
+
+
+/* ===========================================
+ Service Section Start
+======================================= */
+
+.section-services {
+  background: #EFF9FD;
+  height: 47rem;
+}
+
+.section-services a{
+  text-decoration: none;
+  color: black;
+}
+.departments{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  
+  margin-top: 5rem;
+  
+  
+}
+/* .drow1 ,.drow2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+} */
+.department-elements{
+  height: 24rem;
+  width: 27.5rem;
+  /* flex: 0 0 18%; */
+  background: #FFFFFF;
+mix-blend-mode: normal;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.7);
+border-radius: 34px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+transition: all ease-in-out 0.6s; 
+
+
+  
+}
+
+.section-services p {
+  font-size: 3.2rem;
+}
+
+.hero h1{
+  font-family: 'Teko', sans-serif;
+  font-size: 4.8rem;
+  letter-spacing: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 16px;
+
+
+}
+
+
+
+
+
+/* .department-elements, .departments{
+  border: 2px solid red;
+} */
+
+
+/* ***********Targetting services section branch wise image and its text **** */
+
+.department-elements .img{
+   height: 11rem;
+   width: 11rem;
+
+}
+
+.department-elements .department-heading{
+  font-size: 3.4rem;
+  font-family: 'Teko', cursive;
+
+}
+
+/* ===========================================
+ Service Section resposive design Start
+======================================= */
+
+@media (max-width: 90em) {
+
+  .department-elements{
+
+    height: 22rem;
+    width: 24rem;
+}
+
+}
+
+@media (max-width: 79em) {
+
+  .department-elements{
+
+    height: 20rem;
+    width: 22rem;
+}
+
+}
+
+@media (max-width: 66.25em) {
+
+  .department-elements .img{
+    height: 9rem;
+    width: 9rem;
+ 
+ }
+
+}
+
+@media (max-width: 61.75em) {
+
+  .department-elements{
+  
+    flex: 0 0 2;
+  }
+}
+
+
+
+
+/* <!--========================================  */
+/* Our animation for service section - Start   */
+/* ========================================  --> */
+.department-elements:hover{
+  /* translate: 0 -15px 0px;
+  /* transition: all ease-in 0.6s; */ 
+  transform: translateY(-20px);
+  transition: all ease-in-out 0.6s; 
+  background: #f3f5ff;
+box-shadow: 0px 4px 10px rgba(26, 24, 24, 0.7);
+  
+  border-radius: 28px;
+  
+}
+
+
+/* <!--========================================  */
+/* Our feature Section Start   */
+/* ========================================  --> */
+
+/* .section-features-right-elements , .section-features-left-top , .section-features-left-bottom , .section-features-left , .section-features-right , .section-features{
+  border: 2px solid red;
+} */
+.section-features{
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+}
+.section-features-left{
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+
+}
+
+.section-features-right{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+
+
+
+}
+
+.section-features-left-bottom{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 10rem;
+
+}
+
+.section-features-left-top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+}
+
+.section-features-left-top img{
+  position: absolute;
+  top: 4rem;
+  left: 10rem;
+  width: 54rem;
+  height: 36rem;
+  
+ 
+  
+  background: #000000;
+  /* opacity: 0.1; */
+  backdrop-filter: blur(2px);
+  /* Note: backdrop-filter has minimal browser support */
+  
+  border-radius: 6px;
+  
+}
+
+.section-features-left-bottom h2{
+
+  font-family: 'Inter', sans-serif;
+}
+
+
+
+
+
+
+.section-features-right-elements{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     /* justify-content: center; */
+}
+
+.section-features-right-elements{
+
+}
+
+.section-features-right-elements-logo{
+  padding: 0px 15px;
+}
+
+.section-features-right-elements-txt h2{
+  font-family: 'Inter', sans-serif;
+
+}
+
+.section-features-right-elements-txt  div , .section-features-left-bottom div{
+  font-size: 1.35rem;
+  
+}
+
+.section-features {
+    background: #BADEFF;
+    height: 58rem;
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+
+
+  }
+  
+  
+  .section-features p {
+    font-size: 3.2rem;
+  }
+
+
+  /* <!--========================================  */
+/* Our coruses Section Start   */
+/* ========================================  --> */
+
+.section-course {
+  background: rgb(234, 234, 228);
+    
+
+    height: 104rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .course a{
+    text-decoration: none;
+    color: black;
+  }
+
+
+.section-course:hover{
+  
+  background: #FFF9F9;
+  transition: all 0.3s;
+
+
+}
+  .section-course-heading{
+    font-family: 'Reem Kufi Fun', sans-serif;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 5.5rem;
+    line-height: 3rem;
+    /* or 52% */
+    
+    text-align: center;
+    
+    color: #000000;
+  }
+ 
+  .course-heading{
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
+  .course-heading a{
+    text-decoration: none;
+    color: #212529;
+    font-weight: 400;
+  }
+  
+  .course{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+  }
+
+  .course-elements{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid purple; */
+    width: 30rem;
+    height: 32rem;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition:  box-shadow .6s ease-out;
+
+
+    background: rgba(212, 242, 244, 0.5);
+mix-blend-mode: normal;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+
+  }
+
+
+  .course-elements:hover{ 
+    box-shadow: 1px 8px 20px grey;
+   -webkit-transition:  box-shadow .6s ease-in;
+    color: rgb(7, 7, 7);
+    font-weight: 500;
+ }
+
+  
+  
+  .section-courses p {
+    font-size: 3.2rem;
+  }
+
+      /* <!--========================================  */
+/* Our courses  Section responsive Start   */
+/* ========================================  --> */
+
+@media (max-width: 90em) {
+  .course-elements{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid purple; */
+    width: 28rem;
+    height: 30rem;
+  }
+
+
+}
+
+
+@media (max-width: 76.25em) {
+  .course-elements{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid purple; */
+    width: 25rem;
+    height: 27rem;
+  }
+
+
+}
+
+    /* <!--========================================  */
+/* Our Quora Section Start   */
+/* ========================================  --> */
+
+.section-quora {
+    background: #77BDDF;
+    height: 80rem;
+    display: flex;
+    flex-direction: row;
+    /* position: relative; */
+    /* flex-wrap: wrap-reverse; */
+    
+  }
+
+  .section-quora-left , .section-quora-right{
+    /* border: 2px solid rgb(231, 0, 0); */
+  }
+
+  .section-quora-left{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr;
+   
+
+
+
+  }
+
+  .section-quora-left-item{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .top{
+    font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 700;
+font-size: 33px;
+line-height: 40px;
+
+color: #000000;
+  }
+
+  .middle{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 33px;
+padding: 0 11rem;
+/* or 183% */
+
+
+color: #74757E;
+
+  }
+
+  .answer-share-delete img , .view-edit-report img{
+    height: 4.9rem;
+    width: 5rem;
+
+  }
+
+  .answer-share-delete , .view-edit-report {
+    /* border: 2px solid red; */
+    
+  }
+
+  .view-edit-report{
+    padding-left: 12.5rem;
+
+  }
+  .icons{
+    display: flex;
+    position: absolute;
+    left: 10rem;
+
+
+    /* grid-template-columns: 1fr 1fr; */
+    /* border: 2px solid purple; */
+  }
+ .answer , .share , .delete{
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid red; */
+  align-items: center;
+  
+  margin: 15px 0px;
+  
+  
+
+  /* justify-content: center; */
+ }
+
+ .view , .edit , .report{
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid red; */
+  align-items: center;
+  margin: 15px 0px;
+
+  /* justify-content: center; */
+ }
+ .answertxt , .sharetxt , .deletetxt ,.viewtxt , .edittxt , .reporttxt{
+   padding: 0px 1.8rem;
+   font-family: 'Libre Franklin';
+font-style: normal;
+font-weight: 700;
+font-size: 21px;
+line-height: 25px;
+
+color: #000000;
+ }
+
+
+  .section-quora-right{
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+   
+
+  }
+
+  .section-quora-right img{
+    /* position: absolute; */
+width: 526px;
+height: 645px;
+
+
+  }
+
+
+  
+  
+  .section-quora p {
+    font-size: 3.2rem;
+  }
+
+
+     /* <!--========================================  */
+/* Our learn Section Start   */
+/* ========================================  --> */
+
+.section-learn {
+    background: #fff;
+    height: 28rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .section-learn .hero h1{
+    font-size: 4.5rem;
+    font-family: 'Reem Kufi Fun', sans-serif;
+  }
+
+
+     /* <!--========================================  */
+/* Our slider Section Start   */
+/* ========================================  --> */
+
+.section-slider {
+  
+    height: 34rem;
+  }
+
+  
+  
+  
+  .section-slider p {
+    font-size: 3.2rem;
+  } 
+
+  .container1{
+    height: 350px;
+    /* margin: auto; */
+    position: relative;
+    /* width: 90%; */
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slide-container{
+    display: flex;
+    width: calc(250px* 18);
+    animation: scroll 20s linear infinite;
+
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(calc(-250px *9));
+    }
+    
+}
+
+
+.slide-image{
+    /* height: 550px;
+    width: 250px;  */
+    display: flex;
+    align-items: center;
+    /* padding: 0px; */
+    /* margin-left: 0px; */
+    /* border: 2px solid red; */
+
+    /* perspective: 100px; */
+}
+
+
+
+img{
+    width: 100%;
+    transition: transform 1s;
+}
+
+img :hover{
+    transform: translateZ(50px);
+}
+
+
+     /* <!--========================================  */
+/* Our footer Section Start   */
+/* ========================================  --> */
+
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+
+
+/* --------------------------------- */
+
+.section-footer {
+    background: #29323F;
+    height: 30rem;
+    display: grid;
+    /* flex-direction: column; */
+    grid-template-rows: 5.5fr 1fr;
+
+  }
+  
+  .section-footer-elements{
+    /* border: 2px solid red; */
+    width: 100%;
+
+  }
+
+  .section-footer-up{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+
+  }
+ 
+
+  .section-footer-up-elements{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+    
+
+    
+  }
+
+
+  
+  .section-footer p {
+    font-size: 3.2rem;
+  }
+
+  .footerlongtxt{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 33px;
+/* or 183% */
+
+text-transform: capitalize;
+
+color: #74757E;
+
+  }
+
+
+  .footersocial{
+    display: flex;
+    flex-direction: row ;
+  }
+  .footersocial img{
+    width: 32px;
+height: 28px;
+  }
+
+  .followus{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 32px;
+/* identical to box height, or 200% */
+
+text-transform: capitalize;
+
+color: #FFFFFF;
+  }
+
+  .footersocial , .footerlongtxt , .footerlogonoteskart{
+       margin: 10px 10px;
+  }
+
+  .section-footer-down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  .section-footer-down img{
+    width: 270px;
+    height: 26px;
+  }
+  
+  .footernavigation{
+    /* border: 2px solid red; */
+    
+
+  }
+
+  ul{
+    
+    list-style: none;
+  }
+  ul li a{
+    text-decoration: none;
+    color: White;
+
+  }
+
+  #footernavigation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+
+  }
+
+/* ===========================================
+Responsive Codes 
+======================================= */
+
+/* 980px  */
+@media (max-width: 62em) {
+  .mobile-navbar-btn {
+    display: block;
+    z-index: 999;
+    border: 3px solid #212529;
+    color: #212529;
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .header .logo {
+    width: 40%;
+  }
+
+  .navbar {
+    /* display: none; */
+    width: 100%;
+    height: 100vh;
+    background: #e7f5ff;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* to get the tranisition  */
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .active .navbar {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+    display: none;
+  }
+}
+
+/* Below 560px  */
+@media (max-width: 35em) {
+  .header {
+    padding: 0 2.4rem;
+  }
+
+  .header .logo {
+    width: 60%;
+  }}
+
+/*============================= Coming Soon page --------------------------------------------------- */
+
+
+
+
+/*============================= ML DEVELOPMENT CSS --------------------------------------------------- */
+/* .ml-section-hero ,.ml-landing ,.ml-navigator ,.ml-navigator-elements, .area-ml-left , .area-ml-right ,.ml-courses , .books , .col ,.col-elements,.img,.bookname{
+  border: 2px solid red;
+} */
+ .ml-section-hero{
+
+  height: 450px;
+  background: linear-gradient(104.58deg, #027990 14.48%, #2A8DA0 41.43%, #6AADBA 59%, #9AC6CE 68.16%);
+  display: flex;
+  flex-direction: row;
+
+
+ }
+
+ .ml-landing{
+  width: 100%;
+ }
+
+ .ml-desc h5{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 200;
+font-size: 10px;
+line-height: 20px;
+display: flex;
+align-items: center;
+letter-spacing: 0.05em;
+text-transform: capitalize;
+padding-left:39px;
+
+color: #FFFFFF;
+
+ }
+
+ .ml-landing-right img{
+  height: 450px;
+  width: 450px;
+  float: right;
+ 
+ }
+
+
+ .ml-navigator{
+  width: 100%;
+  height: 40rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+ }
+
+ .ml-navigator-elements{
+  width:26rem ;
+  height: 30rem;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ flex-direction: column;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+box-shadow: 10px 7px 7px rgba(0, 0, 0, 0.25);
+
+
+ }
+
+ .area-of-ml{
+display: flex;
+flex-direction: row;
+
+width: 100%;
+height: 566px;
+
+
+background: #BADEFF;
+ }
+
+ .area-ml-left{
+  width: 515px;
+height: 567px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+ }
+
+ .area-ml-right{
+  width: 926px;
+height: 566px;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+ }
+
+ .ml-heading{
+  margin: 60px 0 0 20px;
+ }
+
+ .head-machine , .head-learning{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 73px;
+/* identical to box height */
+
+text-transform: capitalize;
+
+
+
+ }
+
+
+ .head-machine{
+color: white;<%- include("../header") -%>
+
+
+
+
+<%- include("../navigation") -%>
+
+
+<main>
+    <section class="ml-section-hero">
+      <div class="ml-landing ml-landing-left">
+           
+                <div class="ml-heading">
+                 
+                    <span class="head-machine">MACHINE</span>
+                    <span class="head-learning">LEARNING</span>
+                </div>
+                <div class="ml-desc">
+                <h5>To help you on Your Educational Path,We’ve identified books,Videos and Online courses.That will  uplevel your
+                    Abilities and prepare you to use ML for your projects. start with our guided curriculums designed to increase
+                     your knowledge , or choose your own path by exploring our resource library.
+                </h5>
+               </div> 
+
+      </div>
+      <div class="ml-landing ml-landing-right">
+       <img src="/images/ml-front.svg" alt="">
+
+      </div>
+
+    </section>
+
+    <section class="ml-navigator">
+        <div class="ml-navigator-elements">
+            <img height="156px" width="156px" src="/images/books.svg" alt="">
+            <h2>Books</h2>
+        </div>
+        <div class="ml-navigator-elements">
+            <img height="156px" width="156px" src="/images/courses.svg" alt="">
+            <h2>Courses</h2>
+        </div>
+        <div class="ml-navigator-elements">
+            <img height="156px" width="156px" src="/images/videos.svg" alt="">
+            <h2>Videos</h2>
+        </div>
+        <div class="ml-navigator-elements">
+            <img height="156px" width="156px" src="/images/tests.svg" alt="">
+            <h2>Tests</h2>
+        </div>
+    </section>
+
+
+    <section class="area-of-ml">
+        <div class="area-ml-left">
+              <img src="/images/area-photo.svg"     height="400px" width="400px" alt="">
+        </div>
+
+        <div class="area-ml-right">
+                <div class="four-areas">The Four Areas of Machine Learning Education</div>
+                <div class="four-points">
+                   <li>Coding skills: Building ML models involves much more than just knowing ML 
+                       concepts—it requires coding in order to do the data management, parameter 
+                       tuning, and parsing results needed to test and optimize your model.
+                   </li>
+
+
+                   <li>Math and stats: ML is a math heavy discipline, so if you plan to modify 
+                       ML models or build new ones from scratch, familiarity with the 
+                       underlying math concepts is crucial to the process.
+                   </li>
+
+
+                  <li>
+                     ML theory: Knowing the basics of ML theory will give you a foundation
+                     to build on, and help you troubleshoot when something goes wrong.
+                 </li>
+
+
+                 <li>
+                     Build your own projects: Getting hands on experience with ML is the best way to 
+                     put your knowledge to the test, so don't be afraid to dive in early with a
+                     simple colab or 
+                </li>
+                </div>
+        </div>
+    </section>
+     
+
+    <section class="road-map">
+
+            <div class="road-map-text">
+                <h2>Ready To Start Practicing Machine Learning ?</h2>
+                <p>Learn and apply fundamental machine learning concepts with the Crash Course, get real-world experience with the companion Kaggle competition, or visit Learn with Google AI to explore the full library of training resources.</p>
+
+            </div>
+            <div> <button class="btn-roadmap">
+                Road Map
+            </button> </div>
+
+
+
+
+
+
+    </section>
+
+    <section class="ml-courses ml-section">
+
+        
+        <div>
+            <h1>ONLINE COURSES ON MACHINE LEARNINIG</h1>
+        </div>
+        <div>
+
+            <div class="ml-courses">
+                <a href="https://www.udemy.com/course/complete-machine-learning-and-data-science-zero-to-mastery/"  target="_blank">
+                   <div class="ml-courses-elements">
+                       <img src="/images/ml/ml-course1.jpg" alt="">
+                   </div>
+                </a>
+
+                <a href="https://www.udemy.com/course/data-science-and-machine-learning-with-python-hands-on/" target="_blank">
+                   <div class="ml-courses-elements">
+                       <img src="/images/ml/ml-course2.jpg" alt="">
+                   </div>
+                </a>
+
+                <a href="https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/" target="_blank">
+                   <div class="ml-courses-elements">
+                       <img src="/images/ml/ml-course3.jpg" alt="">
+                   </div>
+                </a>
+
+                <a href="https://www.udemy.com/course/machinelearning/" target="_blank">
+                   <div class="ml-courses-elements">
+                       <img src="/images/ml/ml-course4.jpg" alt="">
+                   </div>
+                </a>
+                  
+
+            </div>
+
+            <div class="ml-courses">
+                <a href="https://www.udemy.com/course/clustering-classification-with-machine-learning-in-python/" target="_blank">
+                 <div class="ml-courses-elements">
+                     <img src="/images/ml/ml-course5.jpg" alt="">
+                 </div>
+                </a>
+
+                <a href="https://www.udemy.com/course/the-data-science-course-complete-data-science-bootcamp/" target="_blank">
+                   <div class="ml-courses-elements">
+                       <img src="/images/ml/ml-course6.jpg" alt="">
+                   </div>
+                </a>
+
+                <a href="https://www.udemy.com/course/python-for-machine-learning-data-science-masterclass/" target="_blank">
+                   <div class="ml-courses-elements">
+                       <img src="/images/ml/ml-course7.jpg" alt="">
+                   </div>
+                </a>
+
+                <a href="https://www.udemy.com/course/machine-learning-course-with-python/" target="_blank">
+                   <div class="ml-courses-elements">
+                       <img src="/images/ml/ml-course8.jpg" alt="">
+                   </div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="ml-courses-youtube ml-section">
+
+        
+        <div>
+            <h1>TOP FREE COURSES</h1>
+        </div>
+        
+
+            <div class="ml-courses-youtube">
+                   <div class="ml-courses-elements">
+                    <iframe style="border-radius: 10px;" width="309px" height="225px" src="https://www.youtube.com/embed/GwIo3gDZCVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   </div>
+
+                   <div class="ml-courses-elements">
+                    <iframe style="border-radius: 10px;" width="309px" height="225px" src="https://www.youtube.com/embed/videoseries?list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   </div>
+
+                   <div class="ml-courses-elements">
+                    <iframe style="border-radius: 10px;" width="309px" height="225px" src="https://www.youtube.com/embed/IoZGSQ07e8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   </div>
+                   <!-- <div class="ml-courses-elements"></div> -->
+                  
+
+            </div>
+
+            
+        
+    </section>
+
+
+    <section class="books">
+
+        <div class="col">
+            <div class="col-elements">
+                <div class="img">
+                    <img src="" alt="">
+                </div>
+                <div class="bookname"></div>
+            </div>
+
+            <div class="col-elements">
+                 <div class="img"></div>
+                <div class="bookname" ></div>
+            </div>
+
+            <div class="col-elements"> 
+                <div class="img" ></div>
+                <div class="bookname"></div>
+            </div>
+
+        </div>
+        <div class="col">
+            <div class="col-elements"> 
+                <div class="img" ></div>
+                <div class="bookname"></div>
+            </div>
+
+            <div class="col-elements"> 
+                <div class="img" ></div>
+                <div class="bookname"  ></div>
+            </div>
+
+            <div class="col-elements"> 
+                <div class="img" ></div>
+                <div class="bookname"></div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="col-elements"> 
+                <div class="img" ></div>
+                <div class="bookname"></div>
+            </div>
+            <div class="col-elements"> 
+                <div class="img" ></div>
+                <div class="bookname"></div>
+            </div>
+            <div class="col-elements"> 
+                <div class="img" ></div>
+                <div class="bookname"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="test">
+
+    </section>
+</main>
+
+
+<%- include("../footer") -%>
+border: ;
+padding: 20px;
+ }
+
+
+.head-learning{
+  color: #E59245;
+}
+
+ 
+
+ .four-areas{
+  font-family: 'Quantico';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 46px;
+text-align: center;
+letter-spacing: 0.01em;
+text-transform: capitalize;
+
+color: #000000;
+ }
+
+.four-points {
+  font-family: 'Kaisei Decol';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 22px;
+text-transform: capitalize;
+
+
+color: #000000;
+
+}
+
+.four-points li{
+  margin-top: 40px;
+  list-style: square;
+  padding: 2px 80px;
+}
+
+.btn-roadmap{
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 2px 20px 2px 20px;
+  text-decoration: none;
+  margin-top: 10px;
+  /* height: 0px; */
+}
+
+.btn-roadmap:hover {
+  background: #94bbd4;
+  background-image: -webkit-linear-gradient(top, #94bbd4, #3498db);
+  background-image: -moz-linear-gradient(top, #94bbd4, #3498db);
+  background-image: -ms-linear-gradient(top, #94bbd4, #3498db);
+  background-image: -o-linear-gradient(top, #94bbd4, #3498db);
+  background-image: linear-gradient(to bottom, #94bbd4, #3498db);
+  text-decoration: none;
+}
+
+.road-map-text {
+  text-align: center;
+
+}
+.road-map{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 18rem;
+}
+
+.road-map-text h2{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 47px;
+text-align: center;
+text-transform: capitalize;
+
+color: #000000;
+}
+
+.road-map-text p{
+  font-family: 'IM FELL Great Primer SC';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+text-transform: capitalize;
+
+color: #000000;
+padding: 0px 60px;
+}
+
+
+
+.test{
+  width: 1400px;
+height: 397px;
+
+
+background: #027990;
+border: 1px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+border-bottom-left-radius: 220px;
+border-top-right-radius: 220px;
+
+margin:auto;
+margin-bottom: 10px;
+}
+
+.ml-courses{
+  width: 100%;
+/* height: 720px; */
+display: flex;
+/* flex-direction: column; */
+justify-content: center;
+margin-bottom: 15px;
+background: linear-gradient(180deg, #D4F2F4 0%, rgba(212, 242, 244, 0) 100%);
+}
+
+
+
+.ml-section{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.ml-courses-elements{
+  width: 309px;
+height: 222.49px;
+/* border: 2px solid red; */
+/* webkit-border-radius:20px; */
+margin: 10px;
+background: url(image.png);
+background-color: #007bb6;
+filter: drop-shadow(10px 8px 10px #000000);
+border-radius: 21px;
+}
+
+
+.ml-section h1{
+  
+  font-family: 'Inter', sans-serif;
+
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 64px;
+text-align: center;
+text-transform: capitalize;
+
+color: #000000;
+}
+
+.ml-courses-youtube{
+  width: 100%;
+/* height: 720px; */
+display: flex;
+/* flex-direction: column; */
+justify-content: center;
+margin-bottom: 15px;
+background: #509FC5;
+/* font-size: 20px; */
+}
+
+
+.books{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+
+}
+
+.col{
+  /* width: 100%px; */
+height: 100%;
+/* border: 1px solid red; */
+
+background: linear-gradient(136.42deg, rgba(94, 182, 201, 0.4) 0%, rgba(230, 230, 230, 0) 100.04%);
+}
+
+.col-elements{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 146px;
+  margin: 10px;
+  border: 1px solid red;
+}
+
+.img , .bookname{
+  width: 50%;
+  /* border: 1px solid red; */
+}
+
+/*============================= STREAM DEVELOPMENT CSS --------------------------------------------------- */
+/* .stream-heading , .stream-heading-left , .year-selection , .units {
+  border: 2px solid red;
+} */
+.complex-page{
+  display: flex;
+  flex-direction: column;
+}
+
+.stream-heading{
+  display: flex;
+  flex-direction: row;
+  width: 1540px;
+height: 102px;
+background: #D9D9D9;
+/* align-items: center;
+justify-content: center; */
+
+
+}
+
+.stream-heading h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+padding: 10px 10px;
+margin-top: 18px;
+
+}
+.year-selection{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+  width: 1086px;
+  height: 102px;
+  background: #D9D9D9;
+}
+
+
+.notes-content{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.subjects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid black;
+  /* height: 95%; */
+}
+
+
+
+
+
+.stream-heading-left{
+  width: 354px;
+  height: 104px;
+  background: #D9D9D9;
+}
+
+
+.Sub{
+  width: 354px;
+height: 48px;
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 19px;
+line-height: 19px;
+display: flex;
+justify-content: center;
+align-items: center;
+/* identical to box height */
+
+
+color: #000000;
+
+
+background: #DC9E1C;
+}
+
+
+.subjects-name{
+  box-sizing: border-box;
+
+
+
+
+width: 245px;
+height: 56px;
+
+
+background: #ffffff;
+border: 1px solid #000000;
+border-radius: 7px;
+font-family: 'Josefin Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 16px;
+
+color: #000000;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 15px;
+margin: 10px 10px;
+
+}
+.subjects-name:hover , .subjects-name a:hover{
+  color: white;
+  background-color: #46afc4;
+}
+.subjects-name a{
+  text-decoration: none;
+  color: black;
+  display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+
+
+.years{
+  font-size: 2rem;
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+
+  color: black;
+font-family: 'Josefin Sans';
+background-color: white;
+
+  
+}
+
+.years a{
+  text-decoration: none;
+  color: black;
+}
+
+.units{
+  border-left: 1px solid black;
+  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.unit{
+width: 1006px;
+height: 187px;
+background: #D9D9D9;
+border: 1px solid #000000;
+/* filter: blur(2px); */
+border-radius: 8px;
+margin: 3rem;
+
+}
+
+.unittag{
+  position: relative;
+width: 250px;
+height: 38px;
+top:-1.4rem;
+left: -3.5rem;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+
+background: #027990;
+border-radius: 7px 7px 0px 7px;
+}
+
+.pdf{
+  height: 120px;
+  width: 120px;
+}
+
+h3{
+  padding: 5px 10px;
+  color: black;
+font-family: 'Josefin Sans';
+ 
+}
+
+.unit-pdf {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.unit-pdf div a{
+  text-decoration: none;
+}
+
+.unit-pdf div{
+  /* border: 2px solid red; */
+  width: 180px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
